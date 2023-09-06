@@ -1,0 +1,33 @@
+
+#fh5co-contact{
+    background: rgba(0, 0, 0, 0.04);
+}
+
+#Join_btn{
+      border:solid #B30000;
+      background-color: white;
+      color: black;
+}
+#Join_btn:hover{
+    background-color:#181a1a;
+    color:white;
+}
+
+#Reset_pswd{
+    font-weight: bold;
+    opacity: .9;
+}
+@media only screen and (max-width: 600px) {
+    #Login_btn{
+        width:100%;
+       
+    }
+    #Join_btn{
+        width:100%;
+        margin-top: 28px;
+    }
+    .Login_heading{
+        text-align: center;
+        
+    }
+  }

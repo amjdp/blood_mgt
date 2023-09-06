@@ -1,0 +1,84 @@
+
+/* .donation-care {
+    padding: 50px;
+    background-color: #FFF;
+} */
+#processs {
+    display: block;
+}
+/* .donaticon_process {
+    max-width: 1170px;
+    background-color: yellow;
+} */
+.donaticon_process {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .mt-5, .my-5 {
+    margin-top: 3rem!important;
+} */
+/* .gallery {
+    padding: 50px;
+    background-color: #f1f1f152;
+} */
+
+.donation-care p {
+    padding: 10px;
+    padding-top: 0px;
+    text-align: justify;
+    font-size: 1.3rem;
+
+    font-weight: 500;
+  
+}
+/* .donation_row {
+ 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+
+.donation-care .vd {
+    margin-bottom: 20px;
+}
+.donation-care .bkjiu {
+    background-color: #F8F9FA;
+   
+    padding: 5px;
+}
+
+/* p {
+    margin-bottom: 0px;
+    width: 100%;
+   
+} */
+
+#process{
+    font-family: 'Merriweather', serif;
+    color: #6A6A6A;
+    
+ }
+ .img-fluid {
+    max-width: 100%;
+    height: auto;
+ }
+
+ @media screen and (max-width: 767px) {
+    .bkjiu{
+      text-align: center;
+      width:400px;
+     margin: auto;
+     
+    } 
+  }
+ 
+  .bkjiu{
+    height: 380px;
+
+  }

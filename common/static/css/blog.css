@@ -1,0 +1,31 @@
+
+.list_m11 li {
+    position: relative;
+    padding: 10px 11px 10px 20px;
+    list-style: none;
+}
+
+.card-m1 {
+    box-shadow: 2px 5px 5px #ccc;
+    background: #fff;
+    min-height: 370px;
+    max-width: 90%;
+    margin: 0 auto 20px;
+}
+.card-m1 h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    padding-top: 0;
+}
+
+.list_m11 li::before {
+    content: "\2022";
+    color:#181a1a;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -2em;
+  }

@@ -1,0 +1,33 @@
+#fh5co-header-section {
+    height: 89.2px;
+}
+#footer{
+    height:216.4px;
+    justify-content: center;
+}
+
+#footer .row{
+    justify-content: center;
+
+}
+
+.lead{
+    color: #848484;
+  
+}
+.lead_detail{
+    
+    font-weight:bold;
+    font-size: 17px;
+
+}
+
+.lead_heading{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#register_btn{
+    background: #B30000;
+    color: white;
+}

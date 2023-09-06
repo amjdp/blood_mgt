@@ -1,0 +1,31 @@
+.facts{
+    line-height: 5rem;
+   
+}
+
+#second_heading{
+  top:21px;
+}
+
+.facts ul {
+  font-size: 2rem;
+}
+
+#bms_para1{
+  font-size: 2rem;
+}
+
+.blood_components{
+  color:#B30000;
+}
+ .facts ul li::before {
+  content: "\2022";
+  color:#181a1a;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+body{
+  background:rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,613 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Charity &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+  <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+  <meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+  <!-- Bootstrap  -->
+  <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> -->
+  <!-- Superfish -->
+  <link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+  <!-- Modernizr JS -->
+  <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/register_to_donate.css' %}">
+</head>
+
+<body>
+
+  <div id="fh5co-wrapper">
+    <div id="fh5co-page">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-left fh5co-link">
+              <a href="{% url 'common_app:register' %}">Register</a>
+              <a href="{% url 'common_app:login' %}">Login</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="col-md-6 col-sm-6 text-right fh5co-social">
+              <a href="#" class="grow"><i class="icon-facebook2"></i></a>
+              <a href="#" class="grow"><i class="icon-twitter2"></i></a>
+              <a href="#" class="grow"><i class="icon-instagram2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="fh5co-header-section" class="sticky-banner">
+        <div class="container">
+          <div class="nav-header">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+            <h1 id="fh5co-logo"><a href="index.html">Blood <span style="color:#181a1a;">Wings</span></a></h1>
+            <!-- START #fh5co-menu-wrap -->
+            <nav id="fh5co-menu-wrap" role="navigation">
+              <ul class="sf-menu" id="fh5co-primary-menu">
+                <li class="active">
+                  <a href="{% url 'common_app:index' %}">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="fh5co-sub-ddown">Blood Banks</a>
+                  <ul class="fh5co-sub-menu">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Medical Mission</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'common_app:about' %}">About</a></li>
+                <li><a href="{% url 'common_app:blog' %}">Blog</a></li>
+                <li><a href="{% url 'common_app:contact' %}">Contact</a></li>
+                <li>
+                  <a href="#" class="fh5co-sub-ddown">Get Involved</a>
+                  <ul class="fh5co-sub-menu">
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Blood request</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="fh5co-section-gray">
+        <div class="container-fluid col-lg-8 pt-5 pb-3">
+          <noscript class="lead text-danger">Activate Javascript in your browser to use this website</noscript>
+          <form method="post" action="" class="needs-validation" novalidate="">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12">
+                <h1 class="lead_heading text-center">Blood Donor Registration Form</h1>
+                <hr>
+                <br>
+                <div class="alert alert-danger ml">
+                  You are between the ages of 18 and 55 years and above 50 kg This form is filled and registered only if it is a healthy person who is ready to donate heavy blood Just do it. Or send it to a person who is willing to donate blood thank you.
+                   </div>
+                   <br>
+                <h2 class="lead_detail"><i class="fa fa-address-book"></i> Donor Personal Details</h2>
+                <hr>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="name" class="lead">Name</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-user-circle"></i>
+                    </div>
+                  </div>
+                  <input id="name" name="name" placeholder="Name in English" type="text"
+                    class="form-control form-control-lg" required="required" value=""
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                  <strong class="invalid-tooltip">
+                    Enter Your Name
+                  </strong>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-6 col-md-6">
+                <label for="inputGroupSelect01" class="lead">Gender</label>
+                <span class="text-danger"></span>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-venus-mars"></i></label>
+                  </div>
+                  <select name="gender" class="custom-select custom-select-lg" id="inputGroupSelect01"
+                    required="required" style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                    <option value="">Gender</option>
+                    <option value="Male">I Am Male</option>
+                    <option value="Female">I Am Female</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Select Your Gender
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <label for="bloodgroup" class="lead">Blood Group</label>
+                <span class="text-danger"></span>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="bloodgroup"><i class="fa fa-tint"></i></label>
+                  </div>
+                  <select id="bloodgroup" name="bloodgroup" class="custom-select custom-select-lg" required="required"
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                    <option value="" selected="">Blood Group</option>
+                    <option value="O Pos">O+</option>
+                    <option value="O-ve">O-</option>
+                    <option value="A Pos">A+</option>
+                    <option value="A-ve">A-</option>
+                    <option value="B Pos">B+</option>
+                    <option value="B-ve">B-</option>
+                    <option value="AB Pos">AB+</option>
+                    <option value="AB-ve">AB-</option>
+                    <option value="BBG">Bombay Blood Group</option>
+                    <option value="pp">PP</option>
+                    <option value="A1 Pos">A1+ve
+                    </option>
+                    <option value="A1-ve">A1-ve
+                    </option>
+                    <option value="A2 Pos">A2+ve
+                    </option>
+                    <option value="A2-ve">A2-ve
+                    </option>
+                    <option value="A1B Pos">A1B+ve
+                    </option>
+                    <option value="A1B-ve">A1B-ve
+                    </option>
+                    <option value="A2B Pos">A2B+ve
+                    </option>
+                    <option value="A2B-ve">A2B-ve
+                    </option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Select Your Blood Group
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label for="day" class="lead">Date of Birth:</label>
+            <div class="form-row">
+              <div class="col">
+                <label for="day" class="form-text text-muted">Day</label>
+                <span class="text-danger"></span>
+                <select id="day" name="day" class="custom-select custom-select-lg" required="required">
+                  <option value="">DD</option>
+                  <option value="01.">01</option>
+                  <option value="02.">02</option>
+                  <option value="03.">03</option>
+                  <option value="04.">04</option>
+                  <option value="05.">05</option>
+                  <option value="06.">06</option>
+                  <option value="07.">07</option>
+                  <option value="08.">08</option>
+                  <option value="09.">09</option>
+                  <option value="10.">10</option>
+                  <option value="11.">11</option>
+                  <option value="12.">12</option>
+                  <option value="13.">13</option>
+                  <option value="14.">14</option>
+                  <option value="15.">15</option>
+                  <option value="16.">16</option>
+                  <option value="17.">17</option>
+                  <option value="18.">18</option>
+                  <option value="19.">19</option>
+                  <option value="20.">20</option>
+                  <option value="21.">21</option>
+                  <option value="22.">22</option>
+                  <option value="23.">23</option>
+                  <option value="24.">24</option>
+                  <option value="25.">25</option>
+                  <option value="26.">26</option>
+                  <option value="27.">27</option>
+                  <option value="28.">28</option>
+                  <option value="29.">29</option>
+                  <option value="30.">30</option>
+                  <option value="31.">31</option>
+                </select>
+                <div class="invalid-tooltip">
+                  Select Birth Day
+                </div>
+              </div>
+              <div class="col">
+                <label for="month" class="form-text text-muted">Month</label>
+                <span class="text-danger"></span>
+                <select id="month" name="month" class="custom-select custom-select-lg" required="required">
+                  <option value="">MM</option>
+                  <option value="01.">Jan</option>
+                  <option value="02.">Feb</option>
+                  <option value="03.">Mar</option>
+                  <option value="04.">Apr</option>
+                  <option value="05.">May</option>
+                  <option value="06.">Jun</option>
+                  <option value="07.">Jul</option>
+                  <option value="08.">Aug</option>
+                  <option value="09.">Sep</option>
+                  <option value="10.">Oct</option>
+                  <option value="11.">Nov</option>
+                  <option value="12.">Dec</option>
+                </select>
+                <div class="invalid-tooltip">
+                  Select Birth Month
+                </div>
+              </div>
+              <div class="col-5">
+                <label for="year" class="form-text text-muted">Year</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <input id="year" name="year" placeholder="1992" type="number" class="form-control form-control-lg"
+                    min="1955" max="2050" required="required" value=""
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                  <div class="invalid-tooltip">
+                    Enter Correct Year Ex: 1992
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr>
+                <h2 class="lead_detail"><i class="fa fa-address-card"></i> Donor Communication Details</h2>
+                <hr>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-6 col-md-6">
+                <label for="district" class="lead">Select District</label>
+                <span class="text-danger"></span>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="district"><i class="fa fa-map"></i></label>
+                  </div>
+                  <select id="district" name="district" class="custom-select custom-select-lg" required="required"  
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                    <option selected="selected" value="">Select District</option>
+                    <option value="1">Ernakulam</option>
+                    <option value="2">Alappuzha</option>
+                    <option value="3">Idukki</option>
+                    <option value="4">Kannur</option>
+                    <option value="5">Kasaragod</option>
+                    <option value="6">Kollam</option>
+                    <option value="7">Kottayam</option>
+                    <option value="8">Kozhikode</option>
+                    <option value="9">Malappuram</option>
+                    <option value="10">Palakkad</option>
+                    <option value="11">Pathanamthitta</option>
+                    <option value="12">Thiruvananthapuram</option>
+                    <option value="13">Thrissur</option>
+                    <option value="14">Wayanad</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Select Your District
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <label for="place" class="lead">Select Taluk</label>
+                <span class="text-danger"></span>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="taluk"><i class="fa fa-street-view"></i></label>
+                  </div>
+                  <select id="taluk" name="place" class="custom-select custom-select-lg" required="required"
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                    <option value="">Select Taluk</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Select Your Taluk
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-12">
+                <label for="hospital" class="lead">Nearest Blood Bank</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-hospital-o"></i>
+                    </div>
+                  </div>
+                  <select id="hospital" name="hospital" class="custom-select custom-select-lg" required="required"
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                    <option value="">Nearest Blood Bank</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Select Your Nearest Blood Bank
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12">
+                <div id="suggesstion-box"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-6 col-md-6">
+                <label for="mobile" class="lead">Mobile Number</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-phone-square"></i>
+                    </div>
+                  </div>
+                  <input id="mobile" name="mobileno" placeholder="9809425184" type="number"
+                    class="form-control form-control-lg" required="required" aria-describedby="mobileHelpBlock"
+                    max-length="10" value="" style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                  <div class="invalid-tooltip">
+                    Enter Your Mobile Number
+                  </div>
+                </div>
+                <span id="mobileHelpBlock" class="form-text text-muted">10 Digit Indian Number Only</span>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <label for="whatsapp" class="lead">WhatsApp Number</label> <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-whatsapp"></i>
+                    </div>
+                  </div>
+                  <input id="whatsapp" name="others" placeholder="9809425184" type="number"
+                    class="form-control form-control-lg" aria-describedby="whatsappHelpBlock" required="required"
+                    value="" style="border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                  <div class="invalid-tooltip">
+                    Enter Your WhatsApp Number
+                  </div>
+                </div>
+                <span id="whatsappHelpBlock" class="form-text text-muted">10 Digit Indian Number Only</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12">
+                <label for="email" class="lead">E-Mail ID (example@<strong class="text-danger">g</strong><strong
+                    class="text-warning">mail.com</strong>)</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input id="email" name="eemail" placeholder="example@gmail.com" type="email"
+                    class="form-control form-control-lg" required="required" aria-describedby="emailHelpBlock" value=""
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;"
+                    oncopy="if (!window.__cfRLUnblockHandlers) return false; return false"
+                    onpaste="if (!window.__cfRLUnblockHandlers) return false; return false">
+                  <div class="invalid-tooltip">
+                    Enter Your Valid E-mail id
+                  </div>
+                </div>
+                <span id="emailHelpBlock" class="form-text text-warning ml">ലോഗിൻ ചെയ്യാനുള്ള പാസ്സ്‌വേർഡ്‌ ഇമെയിലിൽ
+                  ലഭിക്കുന്നതാണ്.</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12">
+                <label for="reemail" class="lead">Re Enter E-Mail ID</label>
+                <span class="text-danger"></span>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input id="email" name="reemail" placeholder="example@gmail.com" type="email"
+                    class="form-control form-control-lg" required="required" aria-describedby="emailHelpBlock" value=""
+                    style="border-top-right-radius:4px;border-bottom-right-radius:4px;"
+                    oncopy="if (!window.__cfRLUnblockHandlers) return false; return false"
+                    onpaste="if (!window.__cfRLUnblockHandlers) return false; return false">
+                  <div class="invalid-tooltip">
+                    Re enter Your Valid E-mail id
+                  </div>
+                </div>
+                <span id="emailHelpBlock" class="form-text text-warning ml">ഇമെയിൽ സ്ഥിരീകരിക്കാനായി വീണ്ടും
+                  നൽകുക.</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12">
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" name="agreed" id="customControlValidation1" class="custom-control-input"
+                    value="i agree" checked="checked" required="">
+                  <label for="customControlValidation1" class="custom-control-label" style="color:white;">I agree to
+                    your privacy policy &amp; terms of service (<a class="text-light"
+                      href="https://keralabloodnet.in/privacyandtos" target="_blank">Read</a>)</label>
+                  <div class="invalid-feedback">You Must Agree to continue</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4">
+                <input type="hidden" name="csrf_test_donor" value="3f78128b83a9a6252db1e01af77eebb6">
+                <input type="hidden" name="source" value="web">
+                <button name="submit" type="submit" id="register_btn" class="btn btn-lg w-100 font-weight-bold"><i
+                    class="fa fa-user-o"></i> SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- fh5co-blog-section -->
+      <footer>
+        <div id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                <p class="fh5co-social-icons">
+                  <a href="#"><i class="icon-twitter2"></i></a>
+                  <a href="#"><i class="icon-facebook2"></i></a>
+                  <a href="#"><i class="icon-instagram"></i></a>
+                  <a href="#"><i class="icon-dribbble2"></i></a>
+                  <a href="#"><i class="icon-youtube"></i></a>
+                </p>
+                <p>Copyright 2016 Free Html5 <a href="#">Charity</a>. All Rights Reserved. <br>Made with <i
+                    class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo
+                  Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+
+    </div>
+    <!-- END fh5co-page -->
+
+  </div>
+  <!-- END fh5co-wrapper -->
+
+  <!-- jQuery -->
+
+
+  <script src="{% static  'js/jquery.min.js' %}"></script>
+  <!-- jQuery Easing -->
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <!-- Bootstrap -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- Waypoints -->
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/sticky.js' %}"></script>
+
+  <!-- Stellar -->
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <!-- Superfish -->
+  <script src="{% static 'js/hoverIntent.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+
+  <!-- Main JS -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+ 
+  <script>
+    $(document).ready(function () {
+      $.ajaxSetup({
+        headers: {
+          "X-CSRFToken": '{{ csrf_token }}'
+        }
+      })
+      $('#district').change(function () {
+
+        let dis_id = $(this).val()
+
+
+        $.ajax({
+          url: "{% url 'common_app:taluk' %}",
+
+          data: {
+            'dis_id': dis_id,
+
+          },
+          method: 'POST',
+          success: function (response) {
+            let taluk = response.taluk
+            $('#taluk').empty()
+            $('#taluk').append('<option value="">' + 'Select Taluk' + '</option>')
+            for (let i = 0; i < taluk.length; i++) {
+              console.log(taluk[i])
+              $('#taluk').append('<option>' + taluk[i].t_name + '</option>')
+            }
+            let blood_bank = response.blood_bank
+            $('#hospital').empty()
+            $('#hospital').append('<option value="">' + 'Nearest Blood Bank' + '</option>')
+            for (let i = 0; i < blood_bank.length; i++) {
+            console.log(blood_bank[i])
+            $('#hospital').append('<option>' + blood_bank[i].b_name + '</option>')
+
+            }
+
+          }
+        })
+
+      })
+    })
+
+
+  
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+   
+
+  </script>
+
+</body>
+
+</html>

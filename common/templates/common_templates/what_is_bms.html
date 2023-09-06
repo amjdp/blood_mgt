@@ -1,0 +1,252 @@
+{% extends './base.html' %}
+{% load static %}
+{% block link%} <link rel="stylesheet" href="{% static 'css/what_is_bms.css' %}"> {% endblock %}
+{% block content %}
+
+
+	<div id="fh5co-wrapper">
+	<div id="fh5co-page">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 text-left fh5co-link">
+					<a href="{% url 'common_app:register' %}">Register</a>
+					<a href="#">Login</a>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-6 col-sm-6 text-right fh5co-social">
+					<a href="#" class="grow"><i class="icon-facebook2"></i></a>
+					<a href="#" class="grow"><i class="icon-twitter2"></i></a>
+					<a href="#" class="grow"><i class="icon-instagram2"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="fh5co-header-section" class="sticky-banner">
+		<div class="container">
+			<div class="nav-header">
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+				<h1 id="fh5co-logo"><a href="{% url 'common_app:index'%}">Blood <span style="color:#181a1a;">Wings</span></a></h1>
+				<!-- START #fh5co-menu-wrap -->
+				<nav id="fh5co-menu-wrap" role="navigation">
+					<ul class="sf-menu" id="fh5co-primary-menu">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#" class="fh5co-sub-ddown">Blood Banks</a>
+							 <ul class="fh5co-sub-menu">
+								 <li><a href="#">Events</a></li>
+								 <li><a href="#"></a></li>
+								 <li><a href="#">Medical Mission</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'common_app:about' %}">About</a></li>
+						<li><a href="{% url 'common_app:blog' %}">Blog</a></li>
+						<li><a href="{% url 'common_app:contact' %}">Contact</a></li>
+						<li>
+							<a href="#" class="fh5co-sub-ddown">Get Involved</a>
+							<ul class="fh5co-sub-menu">
+								<li><a href="#">Donate</a></li>
+								<li><a href="#">Blood request</a></li>
+								<li><a href="#">Contact Us</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	
+
+
+	<!-- end:header-top -->
+	<div id="fh5co-features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+					<h3>Facts about blood banking</h3>
+					<p>According to the American Association of Blood Banks as of 2013:</p>
+				</div>
+
+                
+
+				<div class="col-md-10 facts">
+
+                    <ul>
+                        <li> About 36,000 units of blood are needed every day. </li>
+                      
+                        <li> The number of blood units donated is about 13.6 million a year.</li>  
+                    
+                        <li> About 6.8 million volunteers are blood donors each year.</li>
+                    
+                        <li> Each unit of blood is broken down into components, such as red blood cells, plasma, cryoprecipitated AHF, and platelets. One unit of whole blood, once it's separated, may be transfused to several patients, each with different needs.</li> 
+                    
+                        <li>  Annually, more than 21 million blood components are transfused.</li> 
+
+                     </ul>
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box  ">
+					<h3 id="second_heading">Who are the blood donors?</h3>
+				</div>
+				<div class="col-md-9">
+					<p id="bms_para1"> Most blood donors are volunteers. However, sometimes, a patient may want to donate blood a couple of weeks before undergoing surgery, so that his or her blood is available in case of a blood transfusion. Donating blood for yourself is called an autologous donation. Volunteer blood donors must pass certain criteria, including the following: </p>
+					
+				</div>
+				<div class="col-md-10 facts">
+					<ul>
+						<li>Must be at least 16 years of age, or in accordance with state law</li>
+						<li>Must be in good health</li>
+						<li>Must weigh at least 110 pounds</li>
+						<li>Must pass the physical and health history exam given before donation</li>
+					</ul>
+					<p> <strong> Some states permit people younger than 16 or 17 years to donate blood, with parental consent.</strong></p>
+              
+				</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box  ">
+				<h3 id="second_heading">What tests are done in blood banking?</h3>
+			</div>
+			<div class="col-md-9">
+				<p id="bms_para1"> A certain set of standard tests are done in the lab once blood is donated, including, but not limited to, the following: </p>
+				
+			</div>
+
+			<div class="col-md-10 facts">
+				<ul >
+					<li>Typing: ABO group (blood type)</li>
+					<li>Rh typing (positive or negative antigen)</li>
+					<li>Screening for any unexpected red blood cell antibodies that may cause problems in the recipient</li>
+					<li>Screening for current or past infections, including:</li>
+					<li>Hepatitis viruses B and C</li>
+					<li>Human immunodeficiency virus (HIV)</li>
+					<li>Human T-lymphotropic viruses (HTLV) I and II</li>
+					<li>Syphilis</li>
+					<li>West Nile virus</li>
+					<li>Chagas disease </li>
+					<li>Irradiation to blood cells is performed to disable any T-lymphocytes present in the donated blood. (T-lymphocytes can cause a reaction when transfused, but can also cause graft-versus-host problems with repeated exposure to foreign cells.)</li>
+					<li>Leukocyte-reduced blood has been filtered to remove the white blood cells that contain antibodies that can cause fevers in the recipient of the transfusion. (These antibodies, with repeated transfusions, may also increase a recipient's risk of reactions to subsequent transfusions.)</li>
+
+				</ul>
+				
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box  ">
+				<h3 id="second_heading">What are the blood types?</h3>
+			</div>
+			<div class="col-md-9">
+				<p id="bms_para1">According to the American Association of Blood Banks, distribution of blood types in the U.S. includes the following: </p>
+				
+			</div>
+			<div class="col-md-10 facts">
+				<ul>
+			 	<li>O Rh-positive - 39%</li> 
+
+                <li>A Rh-positive - 31%</li> 
+
+                <li>B Rh-positive - 9%</li>   
+
+                <li> O Rh-negative - 9%</li>  
+
+                <li> A Rh-negative - 6%</li>  
+
+                <li>AB Rh-positive - 3%</li>  
+
+                <li>B Rh-negative - 2%</li>  
+
+                <li>AB Rh-negative - 1%</li> 
+			</ul> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box  ">
+				<h3 id="second_heading">What are the components of blood?</h3>
+			</div>
+			<div class="col-md-9">
+				<p id="bms_para1">While blood, or one of its components, may be transferred, each component serves many functions, including the following: </p>
+			</div>
+
+			<div class="col-md-10 facts">
+				<ul>
+			 	<li><strong class="blood_components">Red blood cells.</strong>  These cells carry oxygen to the tissues in the body and are commonly used in the treatment of anemia. </li> 
+
+                <li> <strong class="blood_components">Platelets.</strong> They help the blood to clot and are used in the treatment of leukemia and other forms of cancer. </li> 
+
+                <li> <strong class="blood_components">White blood cells.</strong> These cells help to fight infection, and aid in the immune process. </li>   
+
+                <li><strong class="blood_components">Plasma.</strong> The watery, liquid part of the blood in which the red blood cells, white blood cells, and platelets are suspended. Plasma is needed to carry the many parts of the blood through the bloodstream. Plasma serves many functions, including the following: </li>  
+
+                <li>Helps to maintain blood pressure </li>  
+
+                <li>Provides proteins for blood clotting </li>  
+
+                <li>Balances the levels of sodium and potassium </li>  
+
+                <li><strong class="blood_components">Cryoprecipitate AHF.</strong> The portion of the plasma that contains clotting factors that help to control bleeding. </li> 
+			</ul> 
+			<p> <strong> Albumin, immune globulins, and clotting factor concentrates may also be separated and processed for transfusions.</strong></p>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	
+	<!-- fh5co-blog-section -->
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="fh5co-social-icons">
+							<a href="#"><i class="icon-twitter2"></i></a>
+							<a href="#"><i class="icon-facebook2"></i></a>
+							<a href="#"><i class="icon-instagram"></i></a>
+							<a href="#"><i class="icon-dribbble2"></i></a>
+							<a href="#"><i class="icon-youtube"></i></a>
+						</p>
+						<p>Copyright 2016 Free Html5 <a href="#">Charity</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</div>
+<!-- END fh5co-page -->
+
+</div>
+<!-- END fh5co-wrapper -->
+
+<!-- jQuery -->
+
+
+<script src="{% static  'js/jquery.min.js' %}"></script>
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Waypoints -->
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/sticky.js' %}"></script>
+
+<!-- Stellar -->
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<!-- Superfish -->
+<script src="{% static 'js/hoverIntent.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+
+<!-- Main JS -->
+<script src="{% static 'js/main.js' %}"></script>
+
+{% endblock%}
+
